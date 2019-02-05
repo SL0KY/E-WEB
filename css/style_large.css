@@ -1,0 +1,16 @@
+/* CSS for large screen */
+/* Nav */
+
+nav li{
+	float: left;
+}
+
+.snav{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7em;
+}
+
+.snav li{
+	width: 100%;
+}

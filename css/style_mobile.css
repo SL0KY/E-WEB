@@ -1,0 +1,39 @@
+/* CSS for small screens */
+
+/* Header */
+
+    /* Header :: Nav */
+
+#label-container{
+    display: flex; /* Centre verticalement */
+}
+
+header input:checked + nav{
+    display: block;
+}
+
+nav{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 7em;
+    right: 0;
+    margin: 0;
+    display: none;
+}
+
+nav li{
+    text-align: center;
+    padding: 0 10px;
+    background-color: #da5151;
+}
+
+    /* Sub-menu */
+
+.snav{
+    top: 0;
+    left: 0; /* Prend en compte la bordure de 4px de li */
+                /* box-sizing ne fonctionne pas étant donné que li n'a pas une largeur fixe */
+    transform: translateX(-100%);
+}
+
+/* Header END */
